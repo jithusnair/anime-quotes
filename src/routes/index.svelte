@@ -48,7 +48,7 @@
 			pausePlay = 'Play';
 		} else {
 			selectQuote();
-			timer = setInterval(selectQuote, 5000);
+			timer = setInterval(selectQuote, 15000);
 			pausePlay = 'Pause';
 		}
 	}
@@ -99,5 +99,18 @@
 
 	button:hover {
 		box-shadow: rgb(0 0 0 / 32%) 3px 3px 7px -2px;
+	}
+
+	@media only screen and (max-width: 600px) {
+		p,
+		caption {
+			font-family: 'Dancing Script';
+			font-size: 16px;
+		}
+
+		button {
+			font-size: 16px;
+			padding: 8px 18px;
+		}
 	}
 </style>
